@@ -1,6 +1,6 @@
 {
   "name": "mysql2-migration",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tool to support migration using the mysql 2 package in node.js",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/DyatkoGleb/node-mysql2-migrations#readme",
   "engines": {
-    "node": ">= 14.6.15"
+    "node": ">= 12.22.12"
   },
   "dependencies": {
     "colors": "^1.4.0"
