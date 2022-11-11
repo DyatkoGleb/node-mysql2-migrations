@@ -6,15 +6,15 @@ A tool to support migration using the mysql 2 package in node.js
 A node project with [mysql2] used for database.
 
 ## Install
-
 It can be installed using npm.
+
 ```
 npm i mysql2-migration
 ```
 
 ## Setup
-
 1. Create a file in config directory where you define your database config. (./config/database.js)
+
 **database.js:**
 ```
 module.exports = {
@@ -25,9 +25,10 @@ module.exports = {
     password: 'password'
 }
 ```
-
 2. In the root of your project, create a file with the package connection. (Should be on one level with node_modules)
+
 **migration.js:**
+
 ```
 require('mysql2-migrations')
 ```

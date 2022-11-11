@@ -1,5 +1,9 @@
+## Version 1.2.1
+- Fixed the project description and changelog .mg.
+- A bit of refactoring.
+
 ## Version 1.2.0
-- Added the possibility create migrations for work with columns: add/change/drop.
+- Added the ability to create a migration to work with columns: add/change/drop.
 - Redesigned work with errors.
 - Refactor.
 
