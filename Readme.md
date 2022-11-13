@@ -64,7 +64,8 @@ node migration.js help
 ```
 
 ## Documentation
-See https://github.com/DyatkoGleb/node-mysql2-migrations/blob/main/Documentation.md
+See [documentation].
 
 [node-version-image]: https://img.shields.io/badge/dynamic/xml?color=success&label=node&query=%27%20%3E%3D%20%27&suffix=v12.22.12&url=https%3A%2F%2Fnodejs.org%2F
-[mysql2]: (https://github.com/sidorares/node-mysql2)
+[mysql2]: https://github.com/sidorares/node-mysql2
+[documentation]: https://github.com/DyatkoGleb/node-mysql2-migrations/blob/main/Documentation.md
