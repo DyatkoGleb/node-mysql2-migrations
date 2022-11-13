@@ -38,9 +38,12 @@ Run
 ```
 node migration.js create create_users_table
 node migration.js create drop_users_table
-node migration.js create add_phone_column_to_users_table
-node migration.js create change_phone_column_users_table
-node migration.js create drop_phone_column_from_users_table
+node migration.js create add_age_column_to_users_table 
+node migration.js create add_age_column_to_users_table string
+node migration.js create change_age_column_users_table
+node migration.js create change_age_column_users_table integer
+node migration.js create drop_age_column_from_users_table
+node migration.js create drop_age_column_from_users_table tnteger
 ```
 After that, you can find your migration in ./database/migrations.
 
@@ -53,11 +56,15 @@ There are few ways to run migrations.
 3. Run `node migration.js up 2022_22_07_00675_create_users_table.js`. Runs a migration with name 2022_22_07_00675_create_users_table.js.
 4. Run `node migration.js down`. Runs all the migrations `down` from last upped.
 5. Run `node migration.js down 1`. Runs only 1 `down` migrations.
+6. Run `node migration.js refresh`. Deletes all tables and runs all the pending `up` migrations.
 
 ## If you forgot something
 ```
 node migration.js help
 ```
+
+## Documentation
+See https://github.com/DyatkoGleb/node-mysql2-migrations/blob/main/Documentation.md
 
 [node-version-image]: https://img.shields.io/badge/dynamic/xml?color=success&label=node&query=%27%20%3E%3D%20%27&suffix=v12.22.12&url=https%3A%2F%2Fnodejs.org%2F
 [mysql2]: (https://github.com/sidorares/node-mysql2)

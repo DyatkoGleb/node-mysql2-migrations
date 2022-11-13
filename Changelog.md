@@ -1,3 +1,9 @@
+## Version 2.0.0
+- Added the ability to add, change, drop table columns using methods new class - Migrations.
+- A new command has been added - "refresh", it deletes all tables and runs all the pending `up` migrations.
+- Added documentation.
+- A bit of refactoring.
+
 ## Version 1.2.1
 - Fixed the project description and changelog .mg.
 - A bit of refactoring.
