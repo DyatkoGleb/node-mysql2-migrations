@@ -45,6 +45,7 @@ up = async () => {
 ```
 
 ### Available types
+
 - string(name, length) - VARCHAR(length)
 - tinyText(name) - TINYTEXT
 - text(name) - TEXT
@@ -77,6 +78,8 @@ up = async () => {
 - largeBlob(name) - LARGEBLOB
 
 
+### Custom types
+
 - id() - Create column like `id BIGINT UNSIGNED AUTOINCREMENT PRIMARY KEY`
 - timestamps - Create two TIMESTAMP columns 'created_at' & 'updated_at'
 
@@ -86,3 +89,5 @@ up = async () => {
 - default() - DEFAULT VALUE (pass 0/1 if bool)
 - autoincrement() - AUTO_INCREMENT
 - primaryKey() - PRIMARY KEY
+- check(condition) - CHECK
+- unique(columnNames) - UNIQUE, can be used for a column or for multiple columns

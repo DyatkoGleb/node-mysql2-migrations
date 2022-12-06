@@ -37,6 +37,7 @@ require('mysql2-migrations')
 Run
 ```
 node migration.js create create_users_table
+node migration.js create update_users_table
 node migration.js create drop_users_table
 node migration.js create add_age_column_to_users_table 
 node migration.js create add_age_column_to_users_table string
@@ -52,10 +53,10 @@ After that, you can find your migration in ./database/migrations.
 
 There are few ways to run migrations.
 1. Run `node migration.js up`. Runs all the pending `up` migrations.
-2. Run `node migration.js up 1`. Runs only 1 `up` migrations.
+2. Run `node migration.js up 1`. Runs only 1 pending migration `up`.
 3. Run `node migration.js up 2022_22_07_00675_create_users_table.js`. Runs a migration with name 2022_22_07_00675_create_users_table.js.
-4. Run `node migration.js down`. Runs all the migrations `down` from last upped.
-5. Run `node migration.js down 1`. Runs only 1 `down` migrations.
+4. Run `node migration.js down`. Runs all the migrations `down` from the last upped.
+5. Run `node migration.js down 1`. Runs only 1 `down` migrations from the last upped.
 6. Run `node migration.js refresh`. Deletes all tables and runs all the pending `up` migrations.
 
 ## If you forgot something
