@@ -1,3 +1,7 @@
+## Version 2.2.0
+- Added additional create foreign key.
+- Refactor.
+
 ## Version 2.1.0
 - Added new command for create migration - `update`.
 - Added additional `check` and `unique` attributes to create columns.

@@ -23,10 +23,12 @@ To create columns, you can use methods of the Migration class to simplify this p
 For example:
 ```
 up = async () => {
-    return await this.createTable('users',
+    return await this.createTable('books',
         this.id(),
+        this.unsignedBigInt('author_id'),
         this.string('name', 256).notNull(),
         this.bool('verificated').notNull().default(0),
+        this.foreign('author_id').references('id').on('authors').onDelete('cascade'),
         this.timestamps()
     )
 }
@@ -77,7 +79,6 @@ up = async () => {
 - mediumBlob(name) - MEDIUMBLOB
 - largeBlob(name) - LARGEBLOB
 
-
 ### Custom types
 
 - id() - Create column like `id BIGINT UNSIGNED AUTOINCREMENT PRIMARY KEY`
@@ -91,3 +92,9 @@ up = async () => {
 - primaryKey() - PRIMARY KEY
 - check(condition) - CHECK
 - unique(columnNames) - UNIQUE, can be used for a column or for multiple columns
+
+### Foreign key
+- foreign(foreignKey) - FOREIGN KEY (foreignKey)
+- references(reference) - REFERENCES tableName (reference)
+- on(tableName) - REFERENCES tableName (reference)
+- onDelete(type) - ON DELETE type
