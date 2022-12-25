@@ -1,3 +1,7 @@
+## Version 2.2.1
+- Changed column names for timestamps().
+- A couple of changes in the documentation.
+
 ## Version 2.2.0
 - Added additional create foreign key.
 - Refactor.

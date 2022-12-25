@@ -27,7 +27,6 @@ up = async () => {
         this.id(),
         this.unsignedBigInt('author_id'),
         this.string('name', 256).notNull(),
-        this.bool('verificated').notNull().default(0),
         this.foreign('author_id').references('id').on('authors').onDelete('cascade'),
         this.timestamps()
     )
